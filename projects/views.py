@@ -5,12 +5,16 @@ from django.http import HttpResponse
 from django.views import View
 
 
-def index(request):
-
-    return HttpResponse('<h1>999999999999999999999999999999999</h1>')
+# def index(request):
+#
+#     return HttpResponse('<h1>999999999999999999999999999999999</h1>')
 
 
 class IndexView(View):
 
-    def get(self, requset):
+    def get(self, request):
+        return HttpResponse('<h1>999999999999999999999999999999999</h1>')
+
+    def post(self, request):
+        return HttpResponse('<h1>postpostpostpostpostpostpost</h1>')
 
